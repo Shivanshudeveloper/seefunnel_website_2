@@ -79,7 +79,7 @@ export default function Header() {
             <ul className="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
               {/* Main Navigation Links */}
               <li className="nav-item">
-                <Link className="nav-link" href="/">Home</Link>
+                <a className="nav-link" href="/">Home</a>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="/pricing">Pricing</Link>
@@ -88,8 +88,11 @@ export default function Header() {
                 <Link className="nav-link" href="/howitworks">How it works</Link>
               </li>
 
+              <li className="nav-item">
+              <a className="nav-link" href="/blogs">Blogs</a>
+              </li>
+
               {/* Products Dropdown */}
-              <ProductDropdown />
 
               <li className="nav-item">
                 <Link className="nav-link" href="/about">About us</Link>

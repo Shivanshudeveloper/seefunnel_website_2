@@ -1,23 +1,9 @@
-import { Poppins, Inter } from "next/font/google";
 import Script from 'next/script';
 import './globals.css';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// Font configuration
-const poppins = Poppins({
-  weight: ['400', '500', '600', '700'],
-  subsets: ['latin'],
-  variable: '--font-poppins',
-  display: 'swap'
-});
 
-const inter = Inter({
-  weight: ['400', '500', '600'],
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap'
-});
 
 export const metadata = {
   metadataBase: new URL('https://seefunnel.com'),
@@ -38,7 +24,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
+    <html lang="en">
       <head>
         {/* Use Next.js Script component for third-party scripts */}
         <Script
@@ -82,7 +68,11 @@ export default function RootLayout({ children }) {
         <Footer />
         
         {/* Scripts */}
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
+        <script 
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+          crossOrigin="anonymous"
+        ></script>
         <Script src="/assets/vendor/ityped/index.js" strategy="afterInteractive" />
         <Script src="/assets/vendor/swiper/swiper-bundle.min.js" strategy="afterInteractive" />
         <Script src="/assets/js/functions.js" strategy="afterInteractive" />

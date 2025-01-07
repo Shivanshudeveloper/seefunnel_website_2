@@ -422,7 +422,7 @@ const Home = () => {
 
             <div className="col-xl-4 mt-5 mt-xl-0">
               <div className="tab-content" id="myTabContent" data-bs-theme="dark">
-                <div className="tab-pane fade show active" id="starter-plan-pane" role="tabpanel" aria-labelledby="starter-plan" tabindex="0">
+                <div className="tab-pane fade show active" id="starter-plan-pane" role="tabpanel" aria-labelledby="starter-plan" tabIndex="0">
                   <div className="card bg-dark p-4 p-sm-5 rounded-4">
                     <div className="card-body p-0">
                       <h5 className="mb-3">Included features</h5>
@@ -443,7 +443,7 @@ const Home = () => {
                   </div>
                 </div>	
 
-                <div className="tab-pane fade" id="professional-plan-pane" role="tabpanel" aria-labelledby="professional-plan" tabindex="0">
+                <div className="tab-pane fade" id="professional-plan-pane" role="tabpanel" aria-labelledby="professional-plan" tabIndex="0">
                   <div className="card bg-dark p-4 p-sm-5 rounded-4">
                     <div className="card-body p-0">
                       <h5 className="mb-3">Included features</h5>
@@ -464,7 +464,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                <div className="tab-pane fade" id="enterprise-plan-pane" role="tabpanel" aria-labelledby="enterprise-plan" tabindex="0">
+                <div className="tab-pane fade" id="enterprise-plan-pane" role="tabpanel" aria-labelledby="enterprise-plan" tabIndex="0">
                   <div className="card bg-dark p-4 p-sm-5 rounded-4">
                     <div className="card-body p-0">
                       <h5 className="mb-3">Included features</h5>
@@ -496,21 +496,21 @@ const Home = () => {
       </section>
 
 
-      <section class="pt-0">
-        <div class="container">
-          <div class="bg-dark position-relative rounded-4 overflow-hidden p-4 p-sm-6" data-bs-theme="dark">
-            <div class="position-absolute top-0 end-0 mt-n6">
-              <img src="assets/images/elements/grad-shape/blur-decoration.svg" class="blur-8 opacity-3" alt="Grad shape" />
+      <section className="pt-0">
+        <div className="container">
+          <div className="bg-dark position-relative rounded-4 overflow-hidden p-4 p-sm-6" data-bs-theme="dark">
+            <div className="position-absolute top-0 end-0 mt-n6">
+              <img src="assets/images/elements/grad-shape/blur-decoration.svg" className="blur-8 opacity-3" alt="Grad shape" />
             </div>
 
-            <div class="row g-4 align-items-center position-relative">
-              <div class="col-lg-6">
-                <h2 class="mb-3">Experience the Power of <span class="text-purple">AI Reps</span></h2>
-                <p class="mb-4">Our AI reps offers enhancing customer satisfaction and boosting your business efficiency.</p>
-                <a href="https://app.seefunnel.com/auth/firebase/register" target="_blank" class="btn btn-outline-secondary mb-0">Create free account</a>
+            <div className="row g-4 align-items-center position-relative">
+              <div className="col-lg-6">
+                <h2 className="mb-3">Experience the Power of <span className="text-purple">AI Reps</span></h2>
+                <p className="mb-4">Our AI reps offers enhancing customer satisfaction and boosting your business efficiency.</p>
+                <a href="https://app.seefunnel.com/auth/firebase/register" target="_blank" className="btn btn-outline-secondary mb-0">Create free account</a>
               </div>
 
-              <div class="col-lg-6 position-absolute end-0 top-0 mt-n3 me-n5 d-none d-lg-block">
+              <div className="col-lg-6 position-absolute end-0 top-0 mt-n3 me-n5 d-none d-lg-block">
                 <img src="assets/images/elements/chatbot-cta.png" alt="" />
               </div>
             </div>
