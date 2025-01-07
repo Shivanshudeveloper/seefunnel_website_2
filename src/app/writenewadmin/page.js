@@ -82,7 +82,7 @@ const BlogEditorPage = () => {
                     <div className="card mb-4">
                         <div className="card-body">
                             <TinyMECEditor
-                                apiKey="qosty9v023oj6xwrt5cfhqjed10yvmbly4pb8gbglzav4hhz"
+                                apiKey="k7ghb4talv8f0rwej36b6r4nnb82emd35ks6x1zs4oq0cikl"
                                 onEditorChange={onEditorInputChange}
                                 onInit={(evt, editor) => setText(editor.getContent({ format: "text" }))}
                                 value={value}
