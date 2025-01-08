@@ -58,6 +58,24 @@ export const metadata = {
     },
 }
 
+// Function to blur email
+const blurEmail = (email) => {
+  const [username, domain] = email.split('@');
+  return `${username.charAt(0)}${'•'.repeat(username.length - 1)}@${domain}`;
+};
+
+// Function to blur phone number
+const blurPhone = (phone) => {
+  // Remove all non-digit characters from the phone number
+  const digitsOnly = phone.replace(/\D/g, '');
+  
+  // Get first three digits and blur the rest
+  const firstThree = digitsOnly.slice(0, 3);
+  const remainingLength = digitsOnly.length - 3;
+  
+  return `${firstThree}${'•'.repeat(remainingLength)}`;
+};
+
 const PeoplePage = () => {
   // Previous profile data remains the same
   const profile = {
@@ -105,52 +123,52 @@ const PeoplePage = () => {
     <br />
 
     <div className="bg-light py-5">
-      <div className="container">
-        {/* Header Section */}
-        <div className="card mb-4 shadow-sm">
-          {/* Previous header content remains the same */}
-          <div className="card-body p-4">
-            <div className="row">
-              <div className="col-12">
-                <h1 className="display-5 fw-bold mb-2">
-                  {profile.First_Name} {profile.Last_Name}
-                </h1>
-                <h2 className="h4 text-muted mb-4">{profile.Title}</h2>
-                
-                <div className="row g-3">
-                  <div className="col-md-6">
-                    <div className="d-flex align-items-center">
-                      <Building2 className="me-2 text-primary" size={20} />
-                      <span>{profile.Company_Name}</span>
+        <div className="container">
+          <div className="card mb-4 shadow-sm">
+            <div className="card-body p-4">
+              <div className="row">
+                <div className="col-12">
+                  <h1 className="display-5 fw-bold mb-2">
+                    {profile.First_Name} {profile.Last_Name}
+                  </h1>
+                  <h2 className="h4 text-muted mb-4">{profile.Title}</h2>
+                  
+                  <div className="row g-3">
+                    <div className="col-md-6">
+                      <div className="d-flex align-items-center">
+                        <Building2 className="me-2 text-primary" size={20} />
+                        <span>{profile.Company_Name}</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="d-flex align-items-center">
-                      <MapPin className="me-2 text-primary" size={20} />
-                      <span>{`${profile.City}, ${profile.State}, ${profile.Country}`}</span>
+                    <div className="col-md-6">
+                      <div className="d-flex align-items-center">
+                        <MapPin className="me-2 text-primary" size={20} />
+                        <span>{`${profile.City}, ${profile.State}, ${profile.Country}`}</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="d-flex align-items-center">
-                      <Mail className="me-2 text-primary" size={20} />
-                      <a href={`mailto:${profile.Email}`} className="text-decoration-none">
-                        {profile.Email}
-                      </a>
+                    <div className="col-md-6">
+                      <div className="d-flex align-items-center">
+                        <Mail className="me-2 text-primary" size={20} />
+                        <div className="d-flex align-items-center">
+                          <span className="text-muted">{blurEmail(profile.Email)}</span>
+                          <Lock size={16} className="ms-2 text-primary" />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="d-flex align-items-center">
-                      <Phone className="me-2 text-primary" size={20} />
-                      <a href={`tel:${profile.Primary_Phone}`} className="text-decoration-none">
-                        {profile.Primary_Phone}
-                      </a>
+                    <div className="col-md-6">
+                      <div className="d-flex align-items-center">
+                        <Phone className="me-2 text-primary" size={20} />
+                        <div className="d-flex align-items-center">
+                          <span className="text-muted">{blurPhone(profile.Primary_Phone)}</span>
+                          <Lock size={16} className="ms-2 text-primary" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
         <div className="row g-4 mb-4">
           {/* Company Info and Technology Stack sections remain the same */}
