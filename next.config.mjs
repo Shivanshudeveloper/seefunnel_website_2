@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    // Enable static JSON imports
+    webpack: (config) => {
+      return config;
+    }
+  };
+  
+  export default nextConfig;
+  
+  
