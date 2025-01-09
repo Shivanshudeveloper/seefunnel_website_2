@@ -131,7 +131,11 @@ export default async function PeoplePage({ params }) {
                       <div className="d-flex align-items-center">
                         <Mail className="me-2 text-primary" size={20} />
                         <div className="d-flex align-items-center">
-                          <span className="text-muted">{blurEmail(profile.Email)}</span>
+                          <span className="text-muted">
+                            <a href='https://app.seefunnel.com/auth/firebase/register' target='_blank' >
+                              {blurEmail(profile.Email)}
+                            </a>
+                            </span>
                           <Lock size={16} className="ms-2 text-primary" />
                         </div>
                       </div>
@@ -141,7 +145,9 @@ export default async function PeoplePage({ params }) {
                         <Phone className="me-2 text-primary" size={20} />
                         <div className="d-flex align-items-center">
                           <span className="text-muted">
-                            {blurPhone(profile.Primary_Phone)}
+                            <a href='https://app.seefunnel.com/auth/firebase/register' target='_blank' >
+                              {blurPhone(profile.Primary_Phone)}
+                            </a>
                           </span>
                           <Lock size={16} className="ms-2 text-primary" />
                         </div>
