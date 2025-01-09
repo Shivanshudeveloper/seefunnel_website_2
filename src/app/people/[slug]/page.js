@@ -54,26 +54,26 @@ async function getProfileData(slug) {
 }
 
 // Generate metadata for SEO
-// export async function generateMetadata({ params }) {
-//   const { slug } = params; // Destructure here, not in the function signature
-//   const profile = await getProfileData(slug);
+export async function generateMetadata({ params }) {
+  const { slug } = params; // Destructure here, not in the function signature
+  const profile = await getProfileData(slug);
 
-//   if (!profile) {
-//     return {
-//       title: 'Profile Not Found',
-//       description: 'The requested profile could not be found.',
-//     };
-//   }
+  if (!profile) {
+    return {
+      title: 'Profile Not Found',
+      description: 'The requested profile could not be found.',
+    };
+  }
 
-//   return {
-//     title: `${profile.First_Name} ${profile.Last_Name} - Professional Profile | SeeFunnel`,
-//     description: `View professional details and contact information for ${profile.First_Name} ${profile.Last_Name}, ${profile.Title} at ${profile.Company_Name}.`,
-//     openGraph: {
-//       title: `${profile.First_Name} ${profile.Last_Name} - Professional Profile`,
-//       description: `View professional details and contact information for ${profile.First_Name} ${profile.Last_Name}, ${profile.Title} at ${profile.Company_Name}.`,
-//     },
-//   };
-// }
+  return {
+    title: `${profile.First_Name} ${profile.Last_Name} - Professional Profile | SeeFunnel`,
+    description: `View professional details and contact information for ${profile.First_Name} ${profile.Last_Name}, ${profile.Title} at ${profile.Company_Name}.`,
+    openGraph: {
+      title: `${profile.First_Name} ${profile.Last_Name} - Professional Profile`,
+      description: `View professional details and contact information for ${profile.First_Name} ${profile.Last_Name}, ${profile.Title} at ${profile.Company_Name}.`,
+    },
+  };
+}
 
 // Generate static paths for all profiles
 // export async function generateStaticParams() {
