@@ -66,10 +66,10 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${profile.First_Name} ${profile.Last_Name} - Professional Profile | SeeFunnel`,
+    title: `${profile.First_Name} ${profile.Last_Name} - Email Address | SeeFunnel`,
     description: `View professional details and contact information for ${profile.First_Name} ${profile.Last_Name}, ${profile.Title} at ${profile.Company_Name}.`,
     openGraph: {
-      title: `${profile.First_Name} ${profile.Last_Name} - Professional Profile`,
+      title: `${profile.First_Name} ${profile.Last_Name} - Email Address`,
       description: `View professional details and contact information for ${profile.First_Name} ${profile.Last_Name}, ${profile.Title} at ${profile.Company_Name}.`,
     },
   };
