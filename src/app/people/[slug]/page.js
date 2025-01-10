@@ -1,5 +1,5 @@
 // app/people/[slug]/page.js
-
+'use server';
 import {
   Building2,
   MapPin,
@@ -66,11 +66,25 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${profile.First_Name} ${profile.Last_Name} - Email Address | SeeFunnel`,
-    description: `View professional details and contact information for ${profile.First_Name} ${profile.Last_Name}, ${profile.Title} at ${profile.Company_Name}.`,
+    title: `${profile?.First_Name} ${profile?.Last_Name} - Email Address & Phone Number | ${profile?.Title}`,
+    description: `View ${profile?.First_Name} ${profile?.Last_Name} email address (${blurEmail(profile?.Email)}) and phone number (${blurPhone(profile?.Primary_Phone)}) at Seefunnel. Start with free credits.`,
+    keywords: `${profile?.First_Name} ${profile?.Last_Name} email address, ${profile?.First_Name} ${profile?.Last_Name} phone number, email search, email lookup, email address lookup`,
     openGraph: {
-      title: `${profile.First_Name} ${profile.Last_Name} - Email Address`,
-      description: `View professional details and contact information for ${profile.First_Name} ${profile.Last_Name}, ${profile.Title} at ${profile.Company_Name}.`,
+      title: `${profile?.First_Name} ${profile?.Last_Name} - Email Address & Phone Number | ${profile?.Title}`,
+      description: `View ${profile?.First_Name} ${profile?.Last_Name} email address (${blurEmail(profile?.Email)}) and phone number (${blurPhone(profile?.Primary_Phone)}) at Seefunnel. Start with free credits.`,
+      siteName: 'Seefunnel',
+      type: 'website'
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
+    },
+    alternates: {
+      canonical: `https://seefunnel.co/people/${slug}`
     },
   };
 }
