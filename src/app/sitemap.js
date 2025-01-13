@@ -295,19 +295,7 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: 'https://seefunnel.com/people/kent-wilson-NOKXTBP',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
       url: 'https://seefunnel.com/people/karen-polyasko-R2UFA1O',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://seefunnel.com/people/julie-hunter-FSSKI8B',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
