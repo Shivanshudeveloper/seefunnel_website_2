@@ -401,6 +401,12 @@ export default function sitemap() {
           lastModified: new Date(),
           changeFrequency: 'weekly',
           priority: 0.8,
+    },
+    {
+      url: 'https://seefunnel.com/people/joshua-henderson-DU6YIBT',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
     },    
     // {
     //   url: 'https://yourdomain.com/changes',
