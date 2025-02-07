@@ -2766,6 +2766,48 @@ export default function sitemap() {
             changeFrequency: 'weekly',
             priority: 0.8,
       },
+      {
+            url: 'https://www.seefunnel.com/view/172',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/173',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/174',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/175',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/176',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/177',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/178',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
           
     // {
     //   url: 'https://yourdomain.com/changes',
