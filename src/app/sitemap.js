@@ -4950,7 +4950,12 @@ export default function sitemap() {
             changeFrequency: 'weekly',
             priority: 0.8,
       },
-      
+      {
+            url: 'https://www.seefunnel.com/view/196',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
           
     // {
     //   url: 'https://yourdomain.com/changes',
