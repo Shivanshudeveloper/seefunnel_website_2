@@ -4951,12 +4951,6 @@ export default function sitemap() {
             priority: 0.8,
       },
       {
-            url: 'https://www.seefunnel.com/view/196',
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.8,
-      },
-      {
             url: 'https://www.seefunnel.com/view/179',
             lastModified: new Date(),
             changeFrequency: 'weekly',
