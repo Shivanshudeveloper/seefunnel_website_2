@@ -5634,6 +5634,24 @@ export default function sitemap() {
             changeFrequency: 'weekly',
             priority: 0.8,
       },
+      {
+            url: 'https://www.seefunnel.com/view/199',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/200',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/201',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
           
     // {
     //   url: 'https://yourdomain.com/changes',
