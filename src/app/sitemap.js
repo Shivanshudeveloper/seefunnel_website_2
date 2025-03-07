@@ -6665,7 +6665,68 @@ export default function sitemap() {
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8,
-      }
+      },
+      {
+            url: 'https://www.seefunnel.com/view/203',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/204',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/205',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/206',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/207',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/208',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/209',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/210',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/211',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/212',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      
       
     
     // {
