@@ -58,7 +58,7 @@ export const metadata = {
             <div className="container position-relative pt-4 pt-sm-5 pb-4 pb-lg-8">
                 <div className="row">
                     <div className="col-lg-5 mb-6 mb-lg-0">
-                        <h1 className="h2 mb-lg-4">Powerful tool to drive your business</h1>
+                        <h1 className="h2 mb-lg-4">Automate your work with AI Agents</h1>
                         <p className="mb-lg-4">Gain insights, download leads, and draft outbound messages.</p>
                         <a href="https://app.seefunnel.com/auth/firebase/register" target="_blank" className="btn btn-primary-grad mb-0">Create a free account</a>
                     </div>
@@ -73,7 +73,7 @@ export const metadata = {
                         </div>
 
                         <div className="ps-md-7">
-                            <img src="assets/images/landing/4.jpg" className="rounded-4" alt="feature image" />
+                            <img src="assets/images/landing/1.png" className="rounded-4" alt="feature image" />
                         </div>
                     </div>
                 </div>
@@ -87,13 +87,13 @@ export const metadata = {
                         <div className="row g-4 align-items-center mb-6">
                             <div className="col-md-6 pe-md-4">
                                 <div className="bg-secondary p-4 rounded-4">
-                                    <img src="assets/images/landing/19.jpg" alt="tab image" />
+                                    <img src="assets/images/landing/2.png" alt="tab image" />
                                 </div>
                             </div>
 
                             <div className="col-md-6">
-                                <h4 className="mb-md-4">Create Engaging B2B Sales Pages</h4>
-                                <p className="mb-0">You can create a professional Sales Page, with already build in templates. You can choose from - AI Reps, Slide Show, Video, Testimonial, and Custom Messages</p>
+                                <h4 className="mb-md-4">Create Powerful AI Agents</h4>
+                                <p className="mb-0">You can create agents for tasks like scraping leads, doing LinkedIn research, or even conducting cold outreach. All of them will work independently, automating your business.</p>
                             </div>
                         </div>
 

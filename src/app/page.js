@@ -53,16 +53,16 @@ const Home = () => {
           <div className="container position-relative">
             <div className="row">
               <div className="col-xxl-8 text-center mx-auto">
-                <h1 className="small fw-medium bg-secondary-grad rounded px-2 px-sm-3 py-2 mb-3 d-inline-flex">Sales Page, Leads & Tracking</h1>
+                <h1 className="small fw-medium bg-secondary-grad rounded px-2 px-sm-3 py-2 mb-3 d-inline-flex">AI Agents, Leads & Sales pages</h1>
           
-                <h2 className="mb-3 lh-base">Build stunning sales funnel for
+                <h2 className="mb-3 lh-base">Build Your AI Powered Sales Team for
                   <span className="h1 fw-bold text-primary-grad ityped-cursor-opacity mb-0 d-block">
                     <span className="typed" 
                     data-type-text="Email Marketing&&Social Media&&Promotion&&Agency&&Product Launch&&Personal Portfolio&&App Showcase&&Blog Website&&any purpose"></span>
                   </span>
                 </h2>
 
-                <p className="mb-4 lead">Crafts compelling Sales Pages using Dynamic Videos, Sales AI Reps, and more. <br /> Also, scrape Emails & Phone Numbers for your targeted niche.</p>
+                <p className="mb-4 lead">Create your own AI sales agents to automate lead scraping, <br /> personalized outreach, and AI-driven cold calling while you focus on closing deals.</p>
 
                 <div className="d-flex justify-content-center flex-wrap gap-3">
                   <a href="https://app.seefunnel.com/auth/firebase/register" target="_blank" className="btn btn-dark icon-link icon-link-hover mb-0">Create a free account<i className="bi bi-arrow-right"></i></a>
@@ -192,7 +192,7 @@ const Home = () => {
       <div className="container position-relative">
         {/* Title */}
         <div className="inner-container-small text-center mb-6 mb-lg-7">
-          <h2 className="mb-0">Mark the feature's</h2>
+          <h2 className="mb-0">Take a look at our features</h2>
         </div>
 
         {/* Services */}
