@@ -6726,6 +6726,42 @@ export default function sitemap() {
             changeFrequency: 'weekly',
             priority: 0.8,
       },
+      {
+            url: 'https://www.seefunnel.com/view/213',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/214',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/215',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/216',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/217',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
+            url: 'https://www.seefunnel.com/view/218',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
       
       
     
