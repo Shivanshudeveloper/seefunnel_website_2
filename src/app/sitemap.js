@@ -6763,6 +6763,12 @@ export default function sitemap() {
             priority: 0.8,
       },
       {
+            url: 'https://www.seefunnel.com/view/219',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+      },
+      {
             url: 'https://www.seefunnel.com/view/220',
             lastModified: new Date(),
             changeFrequency: 'weekly',
