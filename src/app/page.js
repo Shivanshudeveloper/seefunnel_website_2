@@ -55,7 +55,7 @@ const Home = () => {
               <div className="col-xxl-8 text-center mx-auto">
                 <h1 className="small fw-medium bg-secondary-grad rounded px-2 px-sm-3 py-2 mb-3 d-inline-flex">AI Agents, Leads & Sales pages</h1>
           
-                <h2 className="mb-3 lh-base">Build Your AI Powered Sales Team for
+                <h2 className="mb-3 lh-base">Build Your AI Sales Team for
                   <span className="h1 fw-bold text-primary-grad ityped-cursor-opacity mb-0 d-block">
                     <span className="typed" 
                     data-type-text="Email Marketing&&Social Media&&Promotion&&Agency&&Product Launch&&Personal Portfolio&&App Showcase&&Blog Website&&any purpose"></span>
