@@ -1,20 +1,23 @@
+"use client";
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import CopyrightYear from './CopyrightYear';
 
 export default function Footer() {
+  const [isDirectoryOpen, setIsDirectoryOpen] = useState(false);
+
   return (
     <footer 
       className="bg-dark position-relative pt-6 pt-lg-8 mt-auto" 
       data-bs-theme="dark"
-      style={{ marginBottom: 0 }} // Explicitly set bottom margin to 0
+      style={{ marginBottom: 0 }}
     >
       <div className="container position-relative">
-        {/* Link widgets */}
+        {/* Original Content Container */}
         <div className="row g-4">
           {/* Widget item */}
           <div className="col-md-6 col-xl-4">
-            {/* logo */}
             <Link href="/">
               <Image 
                 className="h-60px" 
@@ -89,17 +92,63 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* New Directory Container */}
+        <div className="row mt-4">
+          <div className="col-12">
+            <div className="border-top pt-4" style={{borderColor: 'rgba(255,255,255,0.1)'}}>
+              <div 
+                className="d-inline-block mb-2" 
+                onClick={() => setIsDirectoryOpen(!isDirectoryOpen)}
+                style={{ cursor: 'pointer' }}
+              >
+                <small className="text-muted">
+                  <span 
+                    className="d-inline-block rounded-circle me-2" 
+                    style={{
+                      width: '6px',
+                      height: '6px',
+                      backgroundColor: '#fff',
+                      verticalAlign: 'middle'
+                    }}
+                  ></span>
+                  DIRECTORY {isDirectoryOpen ? '▲' : '▼'}
+                </small>
+              </div>
+
+              {isDirectoryOpen && (
+                <div className="row g-2 small text-muted">
+                  {[
+                    'Top 200 Famous People Directory',
+                    ...Array.from({length: 111}, (_, i) => `F${i+1}`),
+                    'Top Companies in IT',
+                    'Company Search by Industry',
+                    'Free Tools',
+                    'Celebrity Directory'
+                  ].map((item, index) => (
+                    <div key={index} className="col-6 col-md-3 col-lg-2">
+                      <Link 
+                        href={`/directory/${item.toLowerCase().replace(/\s+/g, '-')}`} 
+                        className="text-muted text-decoration-none"
+                      >
+                        {item}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
         {/* Divider */}
-        <hr className="mt-xl-5 mb-0 opacity-1" />
+        <hr className="mt-4 mb-0 opacity-1" />
 
         {/* Bottom footer */}
         <div className="d-md-flex justify-content-between align-items-center text-center text-lg-start py-4">
-          {/* copyright text */}
           <div className="text-body small mb-3 mb-md-0">
             <CopyrightYear />
           </div>
           
-          {/* Policy links */}
           <ul className="nav d-flex justify-content-center gap-1 mb-0">
             <li className="nav-item">
               <Link className="nav-link small py-0" href="/privacy-policy">
