@@ -446,7 +446,7 @@ const BlogPage = async () => {
                     By <span className="blog-author-highlight">{featuredPost.author}</span>
                   </p>
                   <a 
-                    href={`/view/${featuredPost.blogPublicId}`}
+                    href={`/blogs/${featuredPost.blogPublicId}`}
                     className="btn btn-lg px-4 py-2"
                     style={{ 
                       backgroundColor: '#7F39F8', 
@@ -466,7 +466,7 @@ const BlogPage = async () => {
               {regularPosts.map((post) => (
                 <a 
                   key={post._id}
-                  href={`/view/${post.blogPublicId}`}
+                  href={`/blogs/${post.blogPublicId}`}
                   className="text-decoration-none"
                 >
                   <article className="blog-card">
